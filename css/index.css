@@ -1,0 +1,361 @@
+/* 头部样式 */
+header {
+	background-color: #f6f6f6;
+	height: 110px;
+}
+
+header div {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div>a {
+	display: block;
+	width: 440px;
+	height: 47px;
+}
+
+header div>a img {
+	width: 100%;
+}
+
+header div ul {
+	width: 700px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header div ul li a:hover {
+	color: #005ba8;
+}
+
+/* banner部分样式 */
+.banner {
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/contact_banner.jpg) no-repeat;
+	background-size: cover;
+}
+
+.banner div {
+	width: 350px;
+	height: 200px;
+	text-align: center;
+	color: white;
+}
+
+.banner div h2,
+.banner div h3,
+.banner div p {
+	font-size: 50px;
+	text-shadow: 2px 1px 2px #111;
+	margin: 15px 0;
+}
+
+.banner div h3 {
+	font-size: 26px;
+}
+
+.banner div hr {
+	border: 1px solid #fff;
+	margin: 30px 0;
+}
+
+.banner div p {
+	font-size: 13px;
+}
+
+/* content部分样式 */
+.content {
+	height: 710px;
+	padding: 25px 0;
+}
+
+.content .nav {
+	height: 35px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.content .nav div {
+	width: 220px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content .nav div i {
+	font-size: 20px;
+}
+
+.content .nav div p {
+	font-size: 14px;
+	color: #666;
+}
+
+.content .nav ul {
+	width: 590px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content .nav ul li a {
+	display: block;
+	height: 100%;
+	font-size: 14px;
+	color: #666;
+}
+
+.content .nav ul li a:hover {
+	color: #005ba8;
+	border-bottom: 1px solid #005ba8;
+}
+
+div .title {
+	color: #333;
+	text-align: center;
+}
+
+.content>div .title h2,
+.main .w>div .title h2 {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+.content>div .title h2::after,
+.main .w>div .title h2::after {
+	content: '';
+	display: block;
+	background-color: #005ba8;
+	height: 5px;
+	width: 65px;
+	position: relative;
+	left: 50%;
+	top: 15px;
+	transform: translateX(-50%);
+}
+
+.content>div .title~div {
+	display: flex;
+	justify-content: space-between;
+	height: 420px;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+
+.content>div .title~div div {
+	width: 57%;
+	font-size: 14px;
+	color: #333;
+}
+
+.content>div .title~div div p {
+	line-height: 50px;
+}
+
+/* 灰色背景部分样式 */
+.main {
+	height: 1660px;
+	background-color: #f1f1f1;
+	padding: 20px 0;
+}
+
+.main .w>div:not(:first-child) .title {
+	margin: 50px 0;
+}
+
+.main .w>.environment .title~div {
+	height: 320px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* 工作环境部分样式 */
+.main .w>.environment .title~div>div{
+	width: 600px;
+	position: relative;
+}
+
+.main .w>.environment .title~div>div img{
+	height: 100%;
+}
+
+.main .w>.environment .title~div>div div{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 320px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0, 91, 160, 0.8);
+	/* border: 1px solid red; */
+}
+
+.main .w>.environment .title~div ul{
+	width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main .w>.environment .title~div ul li {
+	width: 50%;
+	position: relative;
+}
+
+.main .w>.environment .title~div ul li img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.main .w>.environment .title~div ul li>div {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0, 91, 160, 0.8);
+}
+
+.main .w .training .title~div {
+	height: 410px;
+	color: #333;
+	font-size: 14px;
+}
+
+.main .w .training .title~div>div {
+	height: 50%;
+	display: flex;
+}
+
+.main .w .training .title~div>div>div {
+	width: 50%;
+	display: flex;
+}
+
+.main .w .training .title~div>div>div>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+}
+
+.main .w .training .title~div>div h4{
+	margin-bottom: 20px;
+	color: #3178b4;
+	font-size: 15px;
+}
+
+.main .w .training .title~div>div img{
+	height: 100%;
+}
+
+.main .w .team ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main .w .team ul li {
+	width: 32%;
+	height: 560px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main .w .team ul li h3 {
+	font-style: 18px;
+	color: #333;
+}
+
+.main .w .team ul li p {
+	font-style: 12px;
+	color: #999;
+}
+
+.main .w .team ul li img {
+	display: block;
+	width: 350px;
+	height: 350px;
+}
+
+.main .w .team ul li button {
+	width: 180px;
+	height: 50px;
+	background-color: #000;
+	color: white;
+}
+
+.main .w .team ul li button:hover{
+	background-color: #005ba8;
+}
+
+/* 底部样式 */
+footer {
+	height: 350px;
+	background-color: #000;
+	margin-top: 70px;
+	color: #666;
+}
+
+footer .w {
+	position: relative;
+}
+
+footer .w div {
+	display: flex;
+}
+
+footer dl {
+	width: 70px;
+	margin-top: 60px;
+	margin-left: 125px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer dl dt {
+	font-size: 14px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+footer dl dd {
+	font-style: 13px;
+	margin-bottom: 10px;
+}
+
+footer dl dd a{
+	display: block;
+	width: 100%;
+	color: #666;
+}
+
+footer .w div dl:last-child{
+	display: block;
+	width: 310px;
+}
+
+footer .w div dl:last-child dd:nth-child(2) a{
+	font-size: 24px;
+	color: white;
+}
+
+footer .w p{
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+}

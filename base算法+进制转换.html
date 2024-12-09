@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>base算法+进制转换</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			textarea {
+				display: block;
+				width: 80%;
+				outline: 0;
+				border: 1px solid #999;
+				border-radius: 10px;
+				padding: 10px;
+				margin: 1rem auto;
+			}
+
+			textarea:focus {
+				border: 1px solid #2b99ff;
+				box-shadow: 0 0 8px #2b99ff;
+			}
+
+			select {
+				width: 65px;
+				height: 30px;
+			}
+
+			select:selected {
+				background-color: #2b99ff;
+			}
+
+			.content {
+				width: 90%;
+				margin: 50px auto;
+				text-align: center;
+				border: 1px solid #000;
+			}
+
+			.content h2 {
+				margin: 1.5rem 0;
+				font-size: 1.5rem;
+			}
+
+			.content>div>div {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.content>div>div>div{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.content button {
+				width: 100px;
+				font-size: 1.2rem;
+				padding: 0.8rem 1rem;
+				margin: 1rem 0;
+				border-radius: 10px;
+				background-color: #fff;
+				border: 1px solid #aaa;
+			}
+			
+			.content button:hover{
+				background-color: #ddd;
+			}
+			
+			.content div button:first-child{
+				background-color: #2b99ff;
+				color: white;
+			}
+			
+			.content div button:first-child:hover{
+				background-color: #0777ff;
+			}
+			
+			.content .conversion select {
+				width: 120px;
+			}
+		</style>
+		<script src="./js/base算法.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<div class="base64">
+				<h2>base64</h2>
+				<div>
+					<textarea name="" id="" cols="80" rows="10"></textarea>
+					<div>
+						<button>编码</button> <button>解码</button>
+					</div>
+					<textarea name="" id="" cols="80" rows="10"></textarea>
+				</div>
+			</div>
+			<hr>
+			<div class="base32">
+				<h2>base32</h2>
+				<div>
+					<textarea name="" id="" cols="80" rows="10"></textarea>
+					<div>
+						<button>编码</button> <button>解码</button>
+						<select name="" id="">
+							<option value="普通" selected>普通</option>
+							<!-- <option value="三字经">三字经</option> -->
+							<option value="百家姓">百家姓</option>
+						</select>
+					</div>
+					<textarea name="" id="" cols="80" rows="10"></textarea>
+				</div>
+			</div>
+			<hr>
+			<div class="conversion">
+				<h2>进制转换</h2>
+				<div>
+					<textarea name="" id="" cols="80" rows="10"></textarea>
+					<div>
+						<button>转换</button>
+						<select name="" id="">
+							<option value="two" selected>十进制=>二进制</option>
+							<!-- <option value="三字经">三字经</option> -->
+							<option value="ten">二进制=>十进制</option>
+						</select>
+					</div>
+					<textarea name="" id="" cols="80" rows="10"></textarea>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
